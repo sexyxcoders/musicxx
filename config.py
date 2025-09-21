@@ -7,14 +7,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID",""))
-API_HASH = getenv("API_HASH","")
+API_ID = int(getenv("API_ID","22657083"))
+API_HASH = getenv("API_HASH","d6186691704bd901bdab275ceaab88f3")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN","")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI","")
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://pikachuxivan_db_user:pikachuxivan@cluster0.9c3hko7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 # Vars For API End Pont.
 API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
@@ -25,10 +25,10 @@ API_KEY = getenv("API_KEY", None) # youtube song api key, generate free key or b
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID",""))
+LOGGER_ID = int(getenv("LOGGER_ID","-1003072931688"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID",""))
+OWNER_ID = int(getenv("OWNER_ID","7804917014"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
