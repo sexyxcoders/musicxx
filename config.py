@@ -7,14 +7,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID",""))
+API_HASH = getenv("API_HASH","")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI","")
 
 # Vars For API End Pont.
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
@@ -24,10 +24,10 @@ YT_API_KEY = getenv("YT_API_KEY" , None ) ## Your API key like: xbit_10000000xx0
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID"))
+LOGGER_ID = int(getenv("LOGGER_ID",""))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID"))
+OWNER_ID = int(getenv("OWNER_ID",""))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -44,8 +44,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/amigr8")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/randomlychats")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/HamsterUpdatess")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+w9ODyFLtrN45YTY1")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
@@ -74,7 +74,7 @@ CACHE_SLEEP = int(getenv("CACHE_SLEEP" , "3600"))   #60*60
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -89,23 +89,23 @@ autoclean = []
 confirmer = {}
 file_cache: dict[str, float] = {}
 
-START_IMG_URL = ["https://te.legra.ph/file/5fd13f2cc0d03bce9f7f2.jpg",
-                 "https://te.legra.ph/file/c15d01b3e6b40ea141dc9.jpg",
-                 "https://te.legra.ph/file/5fd13f2cc0d03bce9f7f2.jpg"]
+START_IMG_URL = ["https://files.catbox.moe/exw839.jpg",
+                 "https://files.catbox.moe/ddkc5f.jpg",
+                 "https://files.catbox.moe/dkn1xh.jpg"]
     
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/87f680aead03443f291b0.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/lisdv4.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/edd388a42dd2c499fd868.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
-STREAM_IMG_URL = "https://graph.org/file/ff2af8d4d10afa1baf49e.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/e8730fdece86a1166f608.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/ujndls.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/grkqpu.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/ujndls.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/ujndls.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/ujndls.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/3v8uls.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/3v8uls.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/3v8uls.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/3v8uls.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/3v8uls.jpg"
 
 
 
